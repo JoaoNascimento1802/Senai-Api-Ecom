@@ -1,6 +1,10 @@
 package com.revisao.ecommerce.dto;
 
+import com.revisao.ecommerce.entities.Categoria;
 import com.revisao.ecommerce.entities.Produto;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProdutoDTO {
 	
@@ -10,10 +14,9 @@ public class ProdutoDTO {
 	private Double preco;
 	private String imgUrl;
 	
-	
-	
-	
-	
+	private List<CategoriaDTO> categorias = new ArrayList<>();
+
+
 	public ProdutoDTO() {
 		super();
 	}
@@ -29,13 +32,16 @@ public class ProdutoDTO {
 		this.preco = preco;
 		this.imgUrl = imgUrl;
 	}
-	
+
 	public ProdutoDTO(Produto p) {
 		id = p.getId();
 		nome = p.getNome();
 		descricao = p.getDescricao();
 		preco = p.getPreco();
 		imgUrl = p.getImgUrl();
+		for (Categoria categoria : p.getCategorias()){
+			categorias.add(new CategoriaDTO());
+		}
 	}
 
 
@@ -117,8 +123,15 @@ public class ProdutoDTO {
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
 	}
-	
-	
-	
-	
+
+	public List<CategoriaDTO> getCategorias() {
+		return categorias;
+	}
+
+	public void setCategorias(List<CategoriaDTO> categorias) {
+		this.categorias = categorias;
+	}
+
+
+
 }

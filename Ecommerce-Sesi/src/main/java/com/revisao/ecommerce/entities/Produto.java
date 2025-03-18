@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.revisao.ecommerce.dto.CategoriaDTO;
 import com.revisao.ecommerce.dto.ProdutoDTO;
 
 import jakarta.persistence.Column;
@@ -99,4 +100,11 @@ public class Produto {
 		return items.stream().map(x -> x.getPedido()).toList();
 	}
 
+	public Set<Categoria> getCategorias() {
+		return categorias;
+	}
+
+	public void setCategorias(Set<Categoria> categorias) {
+		this.categorias = categorias;
+	}
 }

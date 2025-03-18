@@ -4,6 +4,10 @@ import java.time.Instant;
 
 import com.revisao.ecommerce.entities.StatusDoPedido;
 
-public record PedidoDTO(Instant momento, StatusDoPedido status) {
+public class PedidoDTO {
+    private Instant momento;
+    private StatusDoPedido status;
+
+
 
 }

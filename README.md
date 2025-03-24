@@ -16,6 +16,8 @@
 
 - Java 21 com Spring Boot 3.
 - MySQL para persistência de dados.
+- OAuth 2.0 e JWT para autenticação e segurança.
+- Integração com Cloudify e hospedagem no Azure.
 
 ## 🚀 Como executar o projeto
 

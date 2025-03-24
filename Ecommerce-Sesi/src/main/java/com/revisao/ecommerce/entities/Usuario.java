@@ -21,14 +21,15 @@ public class Usuario {
 	private String email;
 	private String telefone;
 	private String senha;
-	
+
+
 	@OneToMany(mappedBy = "cliente")
 	private List<Pedido> pedidos = new ArrayList<>();
-	
+
 	public Usuario() {
-		
+
 	}
-	
+
 	public Usuario(Long id, String nome, String email, String telefone, String senha) {
 		this.id = id;
 		this.nome = nome;
@@ -76,5 +77,12 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
+
+	public List<Pedido> getPedidos() {
+		return pedidos;
+	}
+
+	public void setPedidos(List<Pedido> pedidos) {
+		this.pedidos = pedidos;
+	}
 }

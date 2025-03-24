@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import com.revisao.ecommerce.dto.CategoriaDTO;
 import com.revisao.ecommerce.entities.Categoria;
 import com.revisao.ecommerce.repositories.CategoriaRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -36,7 +37,7 @@ public class ProdutoService {
 		return busca.map(x -> new ProdutoDTO(x));
 	}
 
-
+@Transactional
 	public ProdutoDTO inset(ProdutoDTO dto) {
 		Produto entity = new Produto();
 		entity.setNome(dto.getNome());

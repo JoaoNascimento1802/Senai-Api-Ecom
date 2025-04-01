@@ -1,21 +1,34 @@
-# Senai-Api-Ecom
+# Senai-To-Do-List
 
-![GitHub repo size](https://img.shields.io/github/repo-size/JoaoNascimento1802/Senai-Api-Ecom?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/JoaoNascimento1802/Senai-Api-Ecom?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/JoaoNascimento1802/Senai-Api-Ecom?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/JoaoNascimento1802/Senai-Api-Ecom?style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/JoaoNascimento1802/Senai-Api-Ecom?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/JoaoNascimento1802/Senai-To-Do-List?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/JoaoNascimento1802/Senai-To-Do-List?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/JoaoNascimento1802/Senai-To-Do-List?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/JoaoNascimento1802/Senai-To-Do-List?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/JoaoNascimento1802/Senai-To-Do-List?style=for-the-badge)
 
-> Repositório com estudos e exemplos práticos sobre JavaScript, com foco no uso do `fetch` API. O objetivo desse projeto é aprender e aplicar conceitos fundamentais de JS em exercícios práticos relacionados a requisições HTTP.
+> API desenvolvida em Java utilizando Spring Boot para gerenciamento de uma lista de tarefas.
 
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- Navegador moderno com suporte a JavaScript.
-- Editor de texto ou IDE (recomendado: VSCode).
+- Você tem o JDK 11 ou superior instalado.
+- Você tem o Maven ou outro gerenciador de dependências configurado.
+- Você possui as Extensões de HTML, CSS e JavaScript (se for integrar com front-end).
+- Você tem uma máquina que suporta VsCode ou IntelliJ IDEA (Windows, Linux ou macOS).
 
-## 🚀 Como executar o projeto
+## 🚀 Instalando Senai-To-Do-List
+
+Para instalar o **Senai-To-Do-List**, siga estas etapas:
+
+### Linux e macOS:
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/JoaoNascimento1802/Senai-Api-Ecom.git
+    ```
+
+### Windows:
 
 1. Clone o repositório:
     ```bash
@@ -24,27 +37,59 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd Sesi-Fetch-Js
+    cd Senai-To-Do-List
     ```
 
-3. Abra o arquivo `index.html` no seu navegador ou use a extensão do VSCode "Live Server" para uma melhor experiência.
+3. Rode o comando de build com Maven:
+    ```bash
+    mvnw.cmd clean install
+    ```
 
-## ☕ Funcionalidades
+## ☕ Usando Senai-To-Do-List
 
-- Exemplos de requisições GET e POST usando `fetch`.
-- Manipulação de dados JSON.
-- Tratamento de erros e promessas.
+Para usar **Senai-To-Do-List**, siga estas etapas:
 
-## 🤝 Contribuindo
+1. Após a instalação, rode o seguinte comando para iniciar a aplicação:
+    ```bash
+    ./mvnw spring-boot:run
+    ```
 
-Contribuições são sempre bem-vindas! Para contribuir:
+2. Acesse a API na URL:
+    ```bash
+    http://localhost:8080
+    ```
 
-1. Fork este repositório.
-2. Crie um branch com sua feature: `git checkout -b minha-feature`.
-3. Faça commit das suas alterações: `git commit -m 'Minha nova feature'`.
-4. Envie para o branch original: `git push origin minha-feature`.
-5. Abra um Pull Request.
+3. Utilize as rotas da API para gerenciar sua lista de tarefas.
+
+## 📫 Contribuindo para Senai-To-Do-List
+
+Para contribuir com **Senai-To-Do-List**, siga estas etapas:
+
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_branch>`
+5. Crie a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#" title="https://github.com/JoaoNascimento1802">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHUjR_YHNor6MGN7WagaBZO7u8DhZe6dP1w&s" width="100px;" alt="Foto do Emanuel no GitHub"/><br>
+        <sub>
+          <b>Emanuel</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## 📝 Licença
 
-Este projeto está sob a licença MIT. Para mais informações, veja o arquivo [LICENSE](LICENSE).
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
